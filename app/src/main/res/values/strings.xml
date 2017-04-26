@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Raspberry Pi Lager</string>
     <string name="label_loading">Wird geladen...</string>>
+    <string name="cart_background">Warenkorb Hintergrund</string>
+    <string name="products">Produkt</string>
+    <string name="apply">Bestätigen</string>
+    <string name="order">Bestellen</string>
+    <string name="keychain1">Schlüsselanhänger 1</string>
+    <string name="keychain2">Schlüsselanhänger 2</string>
+    <string name="keychain3">Schlüsselanhänger 3</string>
+    <string name="about_us">Über uns</string>
 </resources>

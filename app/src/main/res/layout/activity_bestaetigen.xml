@@ -13,7 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="clickLieferung"
-        android:text="Bestätigen" />
+        android:text="@string/apply" />
 
     <ImageView
         android:id="@+id/img_warenkorb"
@@ -22,7 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:alpha="0.1"
-        android:contentDescription="warenkorb hintergrund"
+        android:contentDescription="@string/cart_background"
         app:srcCompat="@drawable/warenbkorb" />
 
     <ImageView
@@ -33,6 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="192dp"
         android:onClick="onClickImg"
-        app:srcCompat="@android:color/background_light" />
+        app:srcCompat="@android:color/background_light"
+        android:contentDescription="@string/products" />
 
 </RelativeLayout>

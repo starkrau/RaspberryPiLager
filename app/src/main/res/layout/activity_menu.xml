@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="144dp"
         android:onClick="clickUber"
-        android:text="Über uns" />
+        android:text="@string/about_us" />
 
     <Button
         android:id="@+id/btn_bestellung"
@@ -25,5 +25,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="76dp"
         android:onClick="clickBestellung"
-        android:text="bestellung" />
+        android:text="@string/order" />
 </RelativeLayout>
