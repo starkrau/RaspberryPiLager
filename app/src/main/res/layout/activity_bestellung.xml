@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raspberry.raspberrypilager.bestellung.bestellung">
+
+    <ImageView
+        android:id="@+id/sa1"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="240dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/sa2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="125dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/sa3"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="250dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.28"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="379dp">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:text="Schlüsselanhänger 1" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:text="Schlüsselanhänger 2" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:text="Schlüsselanhänger 3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_bestellen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="60dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:onClick="clickBestellen"
+            android:text="Bestellen"
+            android:layout_weight="3.53" />
+
+    </LinearLayout>
+
+</RelativeLayout>
