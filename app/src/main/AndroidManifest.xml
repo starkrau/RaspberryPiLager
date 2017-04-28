@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.raspberry.raspberrypilager">
+
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="21"/>
+        android:targetSdkVersion="21" />
 
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -23,9 +26,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".uberuns.uberuns" android:parentActivityName=".menu.menu" android:label="Über uns"/>
-        <activity android:name=".lieferung.lieferung" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".bestellung.bestellung" android:parentActivityName=".menu.menu" android:label="Bestellung"/>
-        <activity android:name=".bestaetigen.bestaetigen" android:parentActivityName=".bestellung.bestellung" android:label="Warenkorb"></activity>
+        <activity
+            android:name=".uberuns.uberuns"
+            android:label="Über uns"
+            android:parentActivityName=".menu.menu" />
+        <activity
+            android:name=".lieferung.lieferung"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".bestellung.bestellung"
+            android:label="Bestellung"
+            android:parentActivityName=".menu.menu" />
+        <activity
+            android:name=".bestaetigen.bestaetigen"
+            android:label="Warenkorb"
+            android:parentActivityName=".bestellung.bestellung" />
+        <activity
+            android:name=".Ladebildschirm.activity_splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
+
 </manifest>
