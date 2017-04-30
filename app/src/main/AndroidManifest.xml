@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".uberuns.uberuns" android:parentActivityName=".menu.Menu" android:label="Über uns"/>
+        <activity android:name=".uberuns.Uberuns" android:parentActivityName=".menu.Menu" android:label="Über uns"/>
         <activity android:name=".lieferung.Lieferung" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".bestellung.Bestellung" android:parentActivityName=".menu.Menu" android:label="Bestellung"/>
         <activity android:name=".bestaetigen.Bestaetigen" android:parentActivityName=".bestellung.Bestellung" android:label="Warenkorb"></activity>
