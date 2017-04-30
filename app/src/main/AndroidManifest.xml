@@ -16,16 +16,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".menu.menu">
+        <activity android:name=".menu.Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".uberuns.uberuns" android:parentActivityName=".menu.menu" android:label="Über uns"/>
-        <activity android:name=".lieferung.lieferung" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".bestellung.bestellung" android:parentActivityName=".menu.menu" android:label="Bestellung"/>
-        <activity android:name=".bestaetigen.bestaetigen" android:parentActivityName=".bestellung.bestellung" android:label="Warenkorb"></activity>
+        <activity android:name=".uberuns.uberuns" android:parentActivityName=".menu.Menu" android:label="Über uns"/>
+        <activity android:name=".lieferung.Lieferung" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".bestellung.Bestellung" android:parentActivityName=".menu.Menu" android:label="Bestellung"/>
+        <activity android:name=".bestaetigen.Bestaetigen" android:parentActivityName=".bestellung.Bestellung" android:label="Warenkorb"></activity>
     </application>
 </manifest>

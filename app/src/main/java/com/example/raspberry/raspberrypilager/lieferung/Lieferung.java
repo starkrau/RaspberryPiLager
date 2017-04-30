@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.raspberry.raspberrypilager.R;
 
-public class lieferung extends AppCompatActivity {
+public class Lieferung extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

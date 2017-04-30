@@ -6,17 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.raspberry.raspberrypilager.R;
-import com.example.raspberry.raspberrypilager.bestellung.bestellung;
+import com.example.raspberry.raspberrypilager.bestellung.Bestellung;
 import com.example.raspberry.raspberrypilager.uberuns.uberuns;
 
-public class menu extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
 
     public void clickBestellung(View view){
-        startActivity(new Intent(menu.this,bestellung.class));
+        startActivity(new Intent(Menu.this,Bestellung.class));
     }
 
     public void clickUber(View view){
-        startActivity(new Intent(menu.this,uberuns.class));
+        startActivity(new Intent(Menu.this,uberuns.class));
     }
 
     @Override
