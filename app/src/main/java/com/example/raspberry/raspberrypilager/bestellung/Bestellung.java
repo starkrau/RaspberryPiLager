@@ -3,43 +3,38 @@ package com.example.raspberry.raspberrypilager.bestellung;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.raspberry.raspberrypilager.R;
-import com.example.raspberry.raspberrypilager.bestaetigen.bestaetigen;
+import com.example.raspberry.raspberrypilager.bestaetigen.Bestaetigen;
 
-import static com.example.raspberry.raspberrypilager.R.id.rb1;
-import static com.example.raspberry.raspberrypilager.R.id.rg;
-
-public class bestellung extends AppCompatActivity {
+public class Bestellung extends AppCompatActivity {
 
 
     public static String status;
 
-    public void clickBestellen(View view){
+    public void clickBestellen(View view) {
 
         RadioButton sl1 = (RadioButton) findViewById(R.id.rb1);
         RadioButton sl2 = (RadioButton) findViewById(R.id.rb2);
         RadioButton sl3 = (RadioButton) findViewById(R.id.rb3);
 
-        if (sl1.isChecked()){
+        if (sl1.isChecked()) {
             status = "sl1";
-        } else if (sl2.isChecked()){
+        } else if (sl2.isChecked()) {
             status = "sl2";
-        } else if (sl3.isChecked()){
+        } else if (sl3.isChecked()) {
             status = "sl3";
         } else {
-            status = "Bitte was auswählen!";
+            status = "Bitte was auswählen!!!";
             Toast.makeText(getApplicationContext(), status, Toast.LENGTH_SHORT).show();
             return;
-        };
+        }
+        ;
 
-       Intent i = new Intent(bestellung.this,bestaetigen.class);
+        Intent i = new Intent(Bestellung.this, Bestaetigen.class);
         i.putExtra("status", status);
         startActivity(i);
 

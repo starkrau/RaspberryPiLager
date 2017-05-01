@@ -17,7 +17,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 
-public class uberuns extends AppCompatActivity {
+public class Uberuns extends AppCompatActivity {
     private WebView webView;
     private ProgressBar progressBar;
     private LinearLayout layoutProgress;

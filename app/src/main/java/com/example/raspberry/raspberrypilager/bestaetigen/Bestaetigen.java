@@ -1,27 +1,22 @@
 package com.example.raspberry.raspberrypilager.bestaetigen;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.raspberry.raspberrypilager.R;
-import com.example.raspberry.raspberrypilager.bestellung.bestellung;
-import com.example.raspberry.raspberrypilager.lieferung.lieferung;
+import com.example.raspberry.raspberrypilager.lieferung.Lieferung;
 
-import static com.example.raspberry.raspberrypilager.bestellung.bestellung.status;
+import static com.example.raspberry.raspberrypilager.bestellung.Bestellung.status;
 
-public class bestaetigen extends AppCompatActivity {
+public class Bestaetigen extends AppCompatActivity {
 
     public void clickLieferung(View view){
-        startActivity(new Intent(bestaetigen.this,lieferung.class));
+        startActivity(new Intent(Bestaetigen.this,Lieferung.class));
     }
 
     @Override
