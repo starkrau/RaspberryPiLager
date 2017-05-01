@@ -23,5 +23,5 @@
         android:inputType="textPersonName"
         android:text="RaspberryPiLager"
         tools:layout_editor_absoluteY="312dp"
-        tools:layout_editor_absoluteX="104dp" />
+        tools:layout_editor_absoluteX="94dp" />
 </android.support.constraint.ConstraintLayout>
