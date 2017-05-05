@@ -5,10 +5,10 @@
     android:id="@+id/activity_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:paddingBottom="100dp"
+    android:paddingLeft="100dp"
+    android:paddingRight="100dp"
+    android:paddingTop="100dp"
     tools:context="com.example.raspberry.raspberrypilager.Splash">
 
     <com.felipecsl.gifimageview.library.GifImageView
