@@ -67,7 +67,7 @@ public class Uberuns extends AppCompatActivity {
 
         //Behandlung falls Seite nicht verfügbar
         if(isOnline()) {
-            webView.loadUrl("https://www.dionysos.informatik.hs-augsburg.de");
+            webView.loadUrl("https://dionysos.informatik.hs-augsburg.de");
         } else {
             String summary = "<html><body><font color='red'>Keine Internetverbingung vorhanden</font></body></html>";
             webView.loadData(summary, "text/html", null);
