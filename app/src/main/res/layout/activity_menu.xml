@@ -1,28 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.raspberry.raspberrypilager.menu.Menu">
 
-    <Button
-        android:id="@+id/btn_uber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="144dp"
-        android:onClick="clickUber"
-        android:text="@string/about_us" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="257dp">
 
-    <Button
-        android:id="@+id/btn_bestellung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_uber"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
-        android:onClick="clickBestellung"
-        android:text="@string/order" />
-</RelativeLayout>
+        <Button
+            android:id="@+id/btn_bestellung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="39dp"
+            android:background="@android:color/transparent"
+            android:onClick="clickBestellung"
+            android:text="@string/order"
+            android:textColor="#ffffff"
+            android:textSize="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/ÜberunsImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="clickBestellung"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bestellen1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="clickUber"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/UberUns" />
+
+        <Button
+            android:id="@+id/btn_uber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="clickUber"
+            android:text="@string/about_us"
+            android:textColor="#ffffff"
+            android:textSize="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="7dp" />
+    </RelativeLayout>
+
+</LinearLayout>
