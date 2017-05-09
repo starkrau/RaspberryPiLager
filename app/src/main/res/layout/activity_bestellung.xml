@@ -40,13 +40,8 @@
         <RadioGroup
             android:id="@+id/rg"
             android:layout_width="match_parent"
-            android:layout_height="379dp">
-
-            <RadioButton
-                android:id="@+id/rb1"
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:text="@string/keychain1" />
+            android:layout_height="379dp"
+            android:layout_weight="1">
 
             <RadioButton
                 android:id="@+id/rb2"
@@ -59,6 +54,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:text="@string/keychain3" />
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:text="@string/keychain1" />
         </RadioGroup>
 
         <Button
