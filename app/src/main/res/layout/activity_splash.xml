@@ -12,8 +12,10 @@
     tools:context="com.example.raspberry.raspberrypilager.Splash">
 
     <com.felipecsl.gifimageview.library.GifImageView
-        android:scaleType="fitCenter"
         android:id="@+id/gifImageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
