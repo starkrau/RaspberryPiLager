@@ -29,7 +29,7 @@ public class Splash extends AppCompatActivity {
         gifImageView = (GifImageView) findViewById(R.id.gifImageView);
 
         try {
-            InputStream inputStream = getAssets().open("gif.gif");
+            InputStream inputStream = getAssets().open("test.gif");
             byte[] bytes = IOUtils.toByteArray(inputStream);
             gifImageView.setBytes(bytes);
             gifImageView.startAnimation();
@@ -44,7 +44,7 @@ public class Splash extends AppCompatActivity {
                 Splash.this.startActivity(new Intent(Splash.this,Menu.class));
                 Splash.this.finish();
             }
-        },3000);
+        },5000);
     }
 
 }
