@@ -29,7 +29,7 @@ public class Splash extends AppCompatActivity {
         gifImageView = (GifImageView) findViewById(R.id.gifImageView);
 
         try {
-            InputStream inputStream = getAssets().open("Fliesband.gif");
+            InputStream inputStream = getAssets().open("fliesband.gif");
             byte[] bytes = IOUtils.toByteArray(inputStream);
             gifImageView.setBytes(bytes);
             gifImageView.startAnimation();
