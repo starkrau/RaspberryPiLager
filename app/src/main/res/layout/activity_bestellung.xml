@@ -2,76 +2,119 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.raspberry.raspberrypilager.bestellung.Bestellung">
 
-    <ImageView
-        android:id="@+id/sa1"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="240dp"
-        app:srcCompat="@mipmap/ic_launcher" />
 
-    <ImageView
-        android:id="@+id/sa2"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="125dp"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/sa3"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="250dp"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="1"
-        android:layout_alignParentTop="true"
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:background="#ffffff"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/relativeLayout2"
         android:layout_alignParentStart="true">
 
-        <RadioGroup
-            android:id="@+id/rg"
+        <ImageView
+            android:id="@+id/imageView1"
             android:layout_width="match_parent"
-            android:layout_height="379dp"
-            android:layout_weight="1">
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/rot1" />
 
-            <RadioButton
-                android:id="@+id/rb2"
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:text="@string/keychain2" />
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="21dp" />
+    </RelativeLayout>
 
-            <RadioButton
-                android:id="@+id/rb3"
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:text="@string/keychain3" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:background="#ffffff"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/relativeLayout5"
+        android:layout_alignParentStart="true">
 
-            <RadioButton
-                android:id="@+id/rb1"
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:text="@string/keychain1" />
-        </RadioGroup>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/blau1" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/relativeLayout4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout5">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/grun1" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/relativeLayout3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout4">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            app:srcCompat="@mipmap/gelb1" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3">
 
         <Button
             android:id="@+id/btn_bestellen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="24dp"
             android:onClick="clickBestellen"
             android:text="@string/order" />
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

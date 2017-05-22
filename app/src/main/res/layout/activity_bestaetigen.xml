@@ -4,7 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context="com.example.raspberry.raspberrypilager.bestaetigen.Bestaetigen">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/Bilder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="192dp"
+            android:contentDescription="@string/products"
+            android:onClick="onClickImg"
+            app:srcCompat="@android:color/background_light" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/btn_bestaetigen"
@@ -24,15 +43,5 @@
         app:srcCompat="@drawable/warenbkorb"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:id="@+id/Bilder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="192dp"
-        android:onClick="onClickImg"
-        app:srcCompat="@android:color/background_light"
-        android:contentDescription="@string/products" />
 
 </RelativeLayout>
