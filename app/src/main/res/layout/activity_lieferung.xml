@@ -9,7 +9,6 @@
     <view
         android:id="@+id/gifImageView2"
         class="com.felipecsl.gifimageview.library.GifImageView"
-        id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </RelativeLayout>

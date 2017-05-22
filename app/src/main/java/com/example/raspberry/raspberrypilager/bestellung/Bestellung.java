@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.example.raspberry.raspberrypilager.R;
 import com.example.raspberry.raspberrypilager.bestaetigen.Bestaetigen;
+
+//import static com.example.raspberry.raspberrypilager.R.id.sa1;
 
 public class Bestellung extends AppCompatActivity {
 
@@ -20,6 +23,8 @@ public class Bestellung extends AppCompatActivity {
         RadioButton sl1 = (RadioButton) findViewById(R.id.rb1);
         RadioButton sl2 = (RadioButton) findViewById(R.id.rb2);
         RadioButton sl3 = (RadioButton) findViewById(R.id.rb3);
+        RadioButton s14 = (RadioButton) findViewById(R.id.rb4);
+
 
         if (sl1.isChecked()) {
             status = "sl1";
@@ -27,7 +32,10 @@ public class Bestellung extends AppCompatActivity {
             status = "sl2";
         } else if (sl3.isChecked()) {
             status = "sl3";
-        } else {
+        } else if (s14.isChecked()) {
+            status = "s14";
+        }
+        else {
             status = "Bitte was auswählen!";
             Toast.makeText(getApplicationContext(), status, Toast.LENGTH_SHORT).show();
             return;

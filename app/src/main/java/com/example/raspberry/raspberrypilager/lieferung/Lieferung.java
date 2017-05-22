@@ -24,7 +24,7 @@ public class Lieferung extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lieferung);
 
-        gifImageView2 = (GifImageView) findViewById(R.id.gifImageView2);
+        /*gifImageView2 = (GifImageView) findViewById(R.id.gifImageView2);
 
         try {
             InputStream inputStream = getAssets().open("post.gif");
@@ -42,6 +42,7 @@ public class Lieferung extends AppCompatActivity {
                 Lieferung.this.startActivity(new Intent(Lieferung.this,Menu.class));
                 Lieferung.this.finish();
             }
-        },6000);
+        },6000);*/
+
     }
 }
