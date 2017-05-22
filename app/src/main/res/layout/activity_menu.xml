@@ -20,7 +20,7 @@
             android:background="@android:color/transparent"
             android:onClick="clickBestellung"
             android:text="@string/order"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textSize="50sp"
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true" />
