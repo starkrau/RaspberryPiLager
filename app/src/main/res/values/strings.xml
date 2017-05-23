@@ -8,5 +8,6 @@
     <string name="keychain1">Schlüsselanhänger 1</string>
     <string name="keychain2">Schlüsselanhänger 2</string>
     <string name="keychain3">Schlüsselanhänger 3</string>
+    <string name="keychain4">Schlüsselanhänger 4</string>
     <string name="about_us">Über uns</string>
 </resources>

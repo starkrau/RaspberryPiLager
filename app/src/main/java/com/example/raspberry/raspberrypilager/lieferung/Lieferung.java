@@ -15,22 +15,23 @@ import org.apache.commons.io.IOUtils;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static com.example.raspberry.raspberrypilager.R.id.gifImageView;
 
 public class Lieferung extends AppCompatActivity {
+
+    private GifImageView postLieferung;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lieferung);
 
-        /*gifImageView2 = (GifImageView) findViewById(R.id.gifImageView2);
+        postLieferung = (GifImageView) findViewById(R.id.postLieferung);
 
         try {
             InputStream inputStream = getAssets().open("post.gif");
             byte[] bytes = IOUtils.toByteArray(inputStream);
-            gifImageView.setBytes(bytes);
-            gifImageView.startAnimation();
+            postLieferung.setBytes(bytes);
+            postLieferung.startAnimation();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,7 +43,7 @@ public class Lieferung extends AppCompatActivity {
                 Lieferung.this.startActivity(new Intent(Lieferung.this,Menu.class));
                 Lieferung.this.finish();
             }
-        },6000);*/
+        },6000);
 
     }
 }

@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="257dp">
+        android:layout_height="253dp">
 
         <Button
             android:id="@+id/btn_bestellung"
@@ -23,33 +23,24 @@
             android:textColor="#000000"
             android:textSize="50sp"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            tools:ignore="RelativeOverlap" />
 
         <ImageView
             android:id="@+id/ÜberunsImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:contentDescription="@string/order"
             android:onClick="clickBestellung"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/anhanger" />
+            app:srcCompat="@drawable/schluessel" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:onClick="clickUber"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/team"/>
 
         <Button
             android:id="@+id/btn_uber"
@@ -63,6 +54,17 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="7dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/about_us"
+            android:onClick="clickUber"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/team" />
     </RelativeLayout>
 
 </LinearLayout>

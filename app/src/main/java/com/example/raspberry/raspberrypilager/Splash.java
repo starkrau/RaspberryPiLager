@@ -18,7 +18,7 @@ import java.sql.DriverManager;
 
 public class Splash extends AppCompatActivity {
 
-    private GifImageView gifImageView;
+    private GifImageView laden;
 
 
     @Override
@@ -26,13 +26,13 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        gifImageView = (GifImageView) findViewById(R.id.gifImageView);
+        laden = (GifImageView) findViewById(R.id.laden);
 
         try {
             InputStream inputStream = getAssets().open("fliesband.gif");
             byte[] bytes = IOUtils.toByteArray(inputStream);
-            gifImageView.setBytes(bytes);
-            gifImageView.startAnimation();
+            laden.setBytes(bytes);
+            laden.startAnimation();
         } catch (IOException e) {
             e.printStackTrace();
         }

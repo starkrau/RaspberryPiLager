@@ -20,20 +20,20 @@ public class Bestellung extends AppCompatActivity {
 
     public void clickBestellen(View view) {
 
-        RadioButton sl1 = (RadioButton) findViewById(R.id.rb1);
-        RadioButton sl2 = (RadioButton) findViewById(R.id.rb2);
-        RadioButton sl3 = (RadioButton) findViewById(R.id.rb3);
-        RadioButton s14 = (RadioButton) findViewById(R.id.rb4);
+        RadioButton sla1 = (RadioButton) findViewById(R.id.rb1);
+        RadioButton sla2 = (RadioButton) findViewById(R.id.rb2);
+        RadioButton sla3 = (RadioButton) findViewById(R.id.rb3);
+        RadioButton s1a4 = (RadioButton) findViewById(R.id.rb4);
 
 
-        if (sl1.isChecked()) {
-            status = "sl1";
-        } else if (sl2.isChecked()) {
-            status = "sl2";
-        } else if (sl3.isChecked()) {
-            status = "sl3";
-        } else if (s14.isChecked()) {
-            status = "s14";
+        if (sla1.isChecked()) {
+            status = "sla1";
+        } else if (sla2.isChecked()) {
+            status = "sla2";
+        } else if (sla3.isChecked()) {
+            status = "sla3";
+        } else if (s1a4.isChecked()) {
+            status = "s1a4";
         }
         else {
             status = "Bitte was auswählen!";
