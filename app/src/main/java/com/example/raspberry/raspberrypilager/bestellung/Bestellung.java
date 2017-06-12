@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.raspberry.raspberrypilager.R;
 import com.example.raspberry.raspberrypilager.bestaetigen.Bestaetigen;
 
-//import static com.example.raspberry.raspberrypilager.R.id.sa1;
 
 public class Bestellung extends AppCompatActivity {
 
@@ -20,20 +20,24 @@ public class Bestellung extends AppCompatActivity {
 
     public void clickBestellen(View view) {
 
-        RadioButton sla1 = (RadioButton) findViewById(R.id.rb1);
-        RadioButton sla2 = (RadioButton) findViewById(R.id.rb2);
-        RadioButton sla3 = (RadioButton) findViewById(R.id.rb3);
-        RadioButton s1a4 = (RadioButton) findViewById(R.id.rb4);
+        RadioButton rot = (RadioButton) findViewById(R.id.rb1);
+        RadioButton blau = (RadioButton) findViewById(R.id.rb2);
+        RadioButton grün = (RadioButton) findViewById(R.id.rb3);
+        RadioButton gelb = (RadioButton) findViewById(R.id.rb4);
+        RadioButton orange = (RadioButton) findViewById(R.id.rb5);
 
 
-        if (sla1.isChecked()) {
-            status = "sla1";
-        } else if (sla2.isChecked()) {
-            status = "sla2";
-        } else if (sla3.isChecked()) {
-            status = "sla3";
-        } else if (s1a4.isChecked()) {
-            status = "s1a4";
+
+        if (rot.isChecked()) {
+            status = "rot";
+        } else if (blau.isChecked()) {
+            status = "blau";
+        } else if (grün.isChecked()) {
+            status = "grün";
+        } else if (gelb.isChecked()) {
+            status = "gelb";
+        } else if (orange.isChecked()) {
+            status = "orange";
         }
         else {
             status = "Bitte was auswählen!";
@@ -52,5 +56,24 @@ public class Bestellung extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bestellung);
+
+        Intent menu = getIntent();
+        String rottxt = menu.getStringExtra("rot_txt");
+        String blautxt = menu.getStringExtra("blau_txt");
+        String gruentxt = menu.getStringExtra("gruen_txt");
+        String gelbtxt = menu.getStringExtra("gelb_txt");
+        String orangetxt = menu.getStringExtra("orange_txt");
+
+        TextView tv1 = (TextView) findViewById(R.id.rot_txtvw);
+        TextView tv2 = (TextView) findViewById(R.id.blau_txtvw);
+        TextView tv3 = (TextView) findViewById(R.id.gruen_txtvw);
+        TextView tv4 = (TextView) findViewById(R.id.gelb_txtvw);
+        TextView tv5 = (TextView) findViewById(R.id.orange_txtvw);
+
+        tv1.setText(rottxt);
+        tv2.setText(blautxt);
+        tv3.setText(gruentxt);
+        tv4.setText(gelbtxt);
+        tv5.setText(orangetxt);
     }
 }

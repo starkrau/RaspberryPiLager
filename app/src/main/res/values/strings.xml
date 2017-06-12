@@ -10,4 +10,9 @@
     <string name="keychain3">Schlüsselanhänger 3</string>
     <string name="keychain4">Schlüsselanhänger 4</string>
     <string name="about_us">Über uns</string>
+    <string name="roter_anh">Roter Schlüsselanhänger</string>
+    <string name="blauer_anh">Blauer Schlüsselanhänger</string>
+    <string name="gruner_anh">Grüner Schlüsselanhänger</string>
+    <string name="gelber_anh">Gelber Schlüsselanhänger</string>
+    <string name="orange_anh">Orange Schlüsselanhänger</string>
 </resources>

@@ -34,7 +34,7 @@
             android:contentDescription="@string/order"
             android:onClick="clickBestellung"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/schluessel" />
+            app:srcCompat="@mipmap/random" />
 
     </RelativeLayout>
 

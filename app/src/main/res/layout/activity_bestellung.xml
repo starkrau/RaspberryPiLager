@@ -8,114 +8,176 @@
     tools:context="com.example.raspberry.raspberrypilager.bestellung.Bestellung">
 
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/relativeLayout2"
-        android:layout_alignParentStart="true"
-        android:background="#ffffff">
+        android:layout_marginBottom="75dp">
 
-        <ImageView
-            android:id="@+id/imageView1"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/keychain1"
-            android:scaleType="fitCenter"
-            app:srcCompat="@mipmap/rot1" />
+            android:layout_height="wrap_content">
 
-    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        android:contentDescription="@string/roter_anh"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@mipmap/rota" />
+
+                    <TextView
+                        android:id="@+id/rot_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        app:srcCompat="@mipmap/blaua"
+                        android:contentDescription="@string/blauer_anh" />
+
+                    <TextView
+                        android:id="@+id/blau_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@mipmap/gruna"
+                        android:contentDescription="@string/gruner_anh" />
+
+                    <TextView
+                        android:id="@+id/gruen_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        app:srcCompat="@mipmap/gelba"
+                        android:contentDescription="@string/gelber_anh" />
+
+                    <TextView
+                        android:id="@+id/gelb_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        app:srcCompat="@mipmap/orangea"
+                        android:contentDescription="@string/orange_anh" />
+
+                    <TextView
+                        android:id="@+id/orange_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
 
     <RelativeLayout
-        android:id="@+id/relativeLayout2"
+        android:id="@+id/relativeLayout3"
         android:layout_width="match_parent"
-        android:layout_height="102dp"
-        android:layout_above="@+id/relativeLayout5"
-        android:layout_alignParentStart="true"
-        android:background="#ffffff">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/keychain2"
-            android:scaleType="fitCenter"
-            app:srcCompat="@mipmap/blau1" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="102dp"
-        android:layout_above="@+id/relativeLayout4"
-        android:layout_alignParentStart="true"
-        android:background="#ffffff">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="false"
-            android:contentDescription="@string/keychain3"
-            android:cropToPadding="false"
-            android:scaleType="fitCenter"
-            app:srcCompat="@mipmap/grun1" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout4"
-        android:layout_width="wrap_content"
-        android:layout_height="102dp"
-        android:layout_above="@+id/relativeLayout3"
-        android:layout_alignParentStart="true"
-        android:background="#ffffff">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/keychain4"
-            android:cropToPadding="true"
-            android:scaleType="centerInside"
-            app:srcCompat="@mipmap/gelb1" />
-
-    </RelativeLayout>
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <RadioButton
-            android:id="@+id/rb1"
-            android:layout_width="match_parent"
-            android:layout_height="102dp" />
-
-        <RadioButton
-            android:id="@+id/rb2"
-            android:layout_width="match_parent"
-            android:layout_height="102dp" />
-
-        <RadioButton
-            android:id="@+id/rb3"
-            android:layout_width="match_parent"
-            android:layout_height="102dp" />
-
-        <RadioButton
-            android:id="@+id/rb4"
-            android:layout_width="match_parent"
-            android:layout_height="102dp" />
-
-    </RadioGroup>
-
-    <RelativeLayout
-        android:background="#ffffff"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/relativeLayout3">
+        android:background="#ffffff">
 
         <Button
             android:id="@+id/btn_bestellen"
@@ -123,9 +185,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="15dp"
             android:onClick="clickBestellen"
             android:text="@string/order" />
     </RelativeLayout>
+
 
 </RelativeLayout>
