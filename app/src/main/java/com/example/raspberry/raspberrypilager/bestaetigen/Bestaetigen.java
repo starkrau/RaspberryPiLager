@@ -46,11 +46,11 @@ public class Bestaetigen extends AppCompatActivity {
         if (status.equals("rot")) {
             bild.setImageResource(R.drawable.rotb);
             Toast.makeText(getApplicationContext(), "Schlüsselanhänger 1", Toast.LENGTH_SHORT).show();
-            anh = 100;
+            anh = 200;
         } else if (status.equals("blau")) {
             bild.setImageResource(R.drawable.blaub);
             Toast.makeText(getApplicationContext(), "Schlüsselanhänger 2", Toast.LENGTH_SHORT).show();
-            anh = 200;
+            anh = 100;
         } else if (status.equals("grün")) {
             bild.setImageResource(R.drawable.grunb);
             Toast.makeText(getApplicationContext(), "Schlüsselanhänger 3", Toast.LENGTH_SHORT).show();
@@ -58,11 +58,11 @@ public class Bestaetigen extends AppCompatActivity {
         } else if (status.equals("gelb")){
             bild.setImageResource(R.drawable.gelb);
             Toast.makeText(getApplicationContext(), "Schlüsselanhänger 4", Toast.LENGTH_SHORT).show();
-            anh = 400;
+            anh = 500;
         }  else if (status.equals("orange")) {
             bild.setImageResource(R.drawable.orangeb);
             Toast.makeText(getApplicationContext(), "Schlüsselanhänger 5", Toast.LENGTH_SHORT).show();
-            anh = 500;
+            anh = 400;
         }
         RelativeLayout.LayoutParams grosse = new RelativeLayout.LayoutParams(600, 600);
         grosse.addRule(RelativeLayout.CENTER_IN_PARENT);
