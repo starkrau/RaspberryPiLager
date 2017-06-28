@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -30,7 +32,9 @@ public class Bestaetigen extends AppCompatActivity {
 
     int anh;
     String report;
-    String satznr;
+    String satz;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +73,19 @@ public class Bestaetigen extends AppCompatActivity {
         bild.setLayoutParams(grosse);
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        status = "";
+    }
+
+    public void onPause() {
+        super.onPause();
+
+        status = "";
+    }
+
     public void onClickImg(View view) {
         if (status.equals("rot")) {
             Toast.makeText(getApplicationContext(), "Schlüsselanhänger 1", Toast.LENGTH_SHORT).show();
@@ -84,9 +101,14 @@ public class Bestaetigen extends AppCompatActivity {
 
     }
 
+
+
     public void clickLieferung(View view) {
 
-        String url = "https://dionysos.informatik.hs-augsburg.de/rest/api/order.php?anh=" + anh;
+        Button best = (Button) findViewById(R.id.btn_bestaetigen);
+        best.setVisibility(View.GONE);
+
+    String url = "https://dionysos.informatik.hs-augsburg.de/rest/api/order.php?anh=" + anh;
         RequestQueue queue = Volley.newRequestQueue(this);
         JsonObjectRequest order = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -94,10 +116,11 @@ public class Bestaetigen extends AppCompatActivity {
 
                 try {
                     report = response.getString("status");
-                    satznr = response.getString("satznr");
+                    satz = response.getString("satznr");
+
                     if(report.equals("OK")){
                         Intent i = new Intent(Bestaetigen.this, Lieferung.class);
-                        i.putExtra("satznr", satznr);
+                        i.putExtra("satz", satz);
                         startActivity(i);
                     } else {
                         Toast.makeText(getApplicationContext(),"Verbindung nicht möglich! Versuchen Sie es in einem Moment erneut!",Toast.LENGTH_LONG).show();
@@ -109,6 +132,7 @@ public class Bestaetigen extends AppCompatActivity {
                             }
                         },2500);
                     }
+
 
                 } catch (JSONException e) {
                     e.printStackTrace();

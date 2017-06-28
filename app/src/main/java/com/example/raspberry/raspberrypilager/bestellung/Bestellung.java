@@ -18,6 +18,7 @@ public class Bestellung extends AppCompatActivity {
 
     public static String status;
 
+
     public void clickBestellen(View view) {
 
         RadioButton rot = (RadioButton) findViewById(R.id.rb1);
@@ -25,8 +26,6 @@ public class Bestellung extends AppCompatActivity {
         RadioButton grün = (RadioButton) findViewById(R.id.rb3);
         RadioButton gelb = (RadioButton) findViewById(R.id.rb4);
         RadioButton orange = (RadioButton) findViewById(R.id.rb5);
-
-
 
         if (rot.isChecked()) {
             status = "rot";
@@ -57,12 +56,34 @@ public class Bestellung extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bestellung);
 
-        Intent menu = getIntent();
-        String rottxt = menu.getStringExtra("rot_txt");
-        String blautxt = menu.getStringExtra("blau_txt");
-        String gruentxt = menu.getStringExtra("gruen_txt");
-        String gelbtxt = menu.getStringExtra("gelb_txt");
-        String orangetxt = menu.getStringExtra("orange_txt");
+        RadioButton rot = (RadioButton) findViewById(R.id.rb1);
+        RadioButton blau = (RadioButton) findViewById(R.id.rb2);
+        RadioButton grün = (RadioButton) findViewById(R.id.rb3);
+        RadioButton gelb = (RadioButton) findViewById(R.id.rb4);
+        RadioButton orange = (RadioButton) findViewById(R.id.rb5);
+
+        Intent Menu = getIntent();
+        String rottxt = Menu.getStringExtra("rot_txt");
+        String blautxt = Menu.getStringExtra("blau_txt");
+        String gruentxt = Menu.getStringExtra("gruen_txt");
+        String gelbtxt = Menu.getStringExtra("gelb_txt");
+        String orangetxt = Menu.getStringExtra("orange_txt");
+
+       if(rottxt.equals("0")){
+            rot.setEnabled(false);
+        }
+        if(blautxt.equals("0")){
+            blau.setEnabled(false);
+        }
+        if(gruentxt.equals("0")){
+            grün.setEnabled(false);
+        }
+        if(gelbtxt.equals("0")){
+            gelb.setEnabled(false);
+        }
+        if(orangetxt.equals("0")){
+            orange.setEnabled(false);
+        }
 
         TextView tv1 = (TextView) findViewById(R.id.rot_txtvw);
         TextView tv2 = (TextView) findViewById(R.id.blau_txtvw);
